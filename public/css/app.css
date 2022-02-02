@@ -96,6 +96,12 @@ MAIN
   font-size: 28px;
   font-family: "Roboto Condensed", "Roboto", Arial, Helvetica, sans-serif;
 }
+.main .current-series > ul {
+  padding: 50px;
+}
+.main .current-series > ul li {
+  padding: 5px 20px;
+}
 .main .current-series .box {
   background-color: #1c1c1c;
   padding: 50px 10px 20px 10px;
@@ -125,15 +131,20 @@ MAIN
   background-color: #4395ff;
 }
 
-.card {
+a {
   width: calc(16.6666666667% - 30px);
+  text-decoration: none;
+  color: white;
 }
-.card .img {
+a .card {
+  width: 100%;
+}
+a .card .img {
   width: 100%;
   aspect-ratio: 1.1;
   overflow: hidden;
 }
-.card .title {
+a .card .title {
   padding: 20px 0px;
   text-transform: uppercase;
   font-size: 15px;
