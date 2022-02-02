@@ -96,8 +96,11 @@ MAIN
   font-size: 28px;
   font-family: "Roboto Condensed", "Roboto", Arial, Helvetica, sans-serif;
 }
+.main .current-series > img {
+  margin: 50px 0px 0px 50px;
+}
 .main .current-series > ul {
-  padding: 50px;
+  padding: 20px 50px;
 }
 .main .current-series > ul li {
   padding: 5px 20px;

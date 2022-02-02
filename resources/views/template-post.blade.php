@@ -9,6 +9,7 @@
         <div class="jumbo"></div>
         <div class="container current-series">
             <h2 class="label">{{$comics["title"]}}</h2>
+            <img src="{{$comics["thumb"]}}" alt="{{$comics["title"]}}" height="350px">
             <ul>
                 <li>Description: {{$comics["description"]}}</li>
                 <li>Price: {{$comics["price"]}}</li>
