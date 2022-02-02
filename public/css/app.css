@@ -1,0 +1,263 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap);/*-----------------------
+VARIABILI
+-----------------------*/
+/*-----------------------
+RESET
+-----------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+/*-----------------------
+COMMON
+-----------------------*/
+.container {
+  width: 67%;
+  min-width: 1200px;
+  margin: auto;
+}
+
+/*-----------------------
+HEADER
+-----------------------*/
+.topbar {
+  height: 25px;
+  background-color: #0282f9;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: 80px;
+}
+
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+}
+.nav-menu ul > :hover {
+  border-bottom: 5px solid #0282f9;
+}
+.nav-menu ul li {
+  margin: 0px 10px;
+  line-height: 113px;
+  transition: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+.nav-menu ul li a {
+  color: #303030;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 5px;
+  font-family: "Roboto Condensed", "Roboto", Arial, Helvetica, sans-serif;
+}
+.nav-menu ul li :hover {
+  color: #0282f9;
+}
+
+.active {
+  border-bottom: 5px solid #0282f9;
+}
+
+/*-----------------------
+MAIN
+-----------------------*/
+.main {
+  color: white;
+  background-color: #1c1c1c;
+}
+.main .jumbo {
+  width: 100%;
+  height: 400px;
+  background-image: url("../img/jumbotron.jpg");
+  background-size: cover;
+}
+.main .current-series {
+  position: relative;
+}
+.main .current-series h2 {
+  background-color: #0282f9;
+  position: absolute;
+  top: -30px;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  font-size: 28px;
+  font-family: "Roboto Condensed", "Roboto", Arial, Helvetica, sans-serif;
+}
+.main .current-series .box {
+  background-color: #1c1c1c;
+  padding: 50px 10px 20px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.main .current-series .box button {
+  background-color: #0282f9;
+  text-transform: uppercase;
+  font-family: "Roboto Condensed", "Roboto", Arial, Helvetica, sans-serif;
+  border: none;
+  padding: 10px 0px;
+  font-size: 14px;
+  font-weight: 600;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.main .current-series .box button a {
+  padding: 10px 50px;
+  color: white;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.main .current-series .box button :hover {
+  background-color: #4395ff;
+}
+
+.card {
+  width: calc(16.6666666667% - 30px);
+}
+.card .img {
+  width: 100%;
+  aspect-ratio: 1.1;
+  overflow: hidden;
+}
+.card .title {
+  padding: 20px 0px;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+/*-----------------------
+FOOTER
+-----------------------*/
+.top-bar {
+  background-color: #0282f9;
+  height: 150px;
+  text-transform: uppercase;
+  color: white;
+}
+.top-bar .container {
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  align-items: center;
+}
+.top-bar .container img {
+  height: 55px;
+}
+.top-bar .container .visa img {
+  width: 55px;
+}
+.top-bar .container div {
+  display: flex;
+  align-items: center;
+}
+.top-bar .container div span {
+  padding: 0px 10px;
+  font-size: 14px;
+}
+
+.mid-bar {
+  width: 100%;
+  background-image: url("../img/footer-bg.jpg");
+  height: 370px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.mid-bar .container {
+  display: flex;
+}
+.mid-bar .container > div {
+  width: 50%;
+}
+.mid-bar .container .right {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  top: -95px;
+}
+.mid-bar .container .left {
+  display: flex;
+  padding: 30px 0px;
+}
+.mid-bar .container .left > div {
+  margin-right: 30px;
+}
+.mid-bar .container .left .footer-title {
+  text-transform: uppercase;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Roboto Condensed", "Roboto", Arial, Helvetica, sans-serif;
+  padding: 15px 0px;
+}
+.mid-bar .container .left ul {
+  list-style: none;
+}
+.mid-bar .container .left ul li a {
+  text-decoration: none;
+  color: gray;
+  font-size: 13px;
+  padding: 5px 0px;
+}
+.mid-bar .container .left ul li :hover {
+  color: #0282f9;
+}
+
+.bottom-bar {
+  background-color: #303030;
+  height: 120px;
+}
+.bottom-bar .container {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+}
+.bottom-bar .container .button button {
+  margin: 35px 0px;
+  padding: 15px 0px;
+  background: none;
+  border: 2px solid #0282f9;
+}
+.bottom-bar .container .button button a {
+  padding: 15px 20px;
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+  text-transform: uppercase;
+  transition: 0.2s;
+}
+.bottom-bar .container .button button :hover {
+  background-color: #0282f9;
+}
+.bottom-bar .container .social {
+  display: flex;
+  align-items: center;
+}
+.bottom-bar .container .social span {
+  text-transform: uppercase;
+  color: #0282f9;
+  font-size: 22px;
+  font-family: "Roboto Condensed", "Roboto", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  margin: 0px 20px;
+}
+.bottom-bar .container .social a {
+  margin-left: 18px;
+}
+.bottom-bar .container .social a :hover {
+  opacity: 0.8;
+}
